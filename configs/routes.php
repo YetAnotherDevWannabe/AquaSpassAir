@@ -2,9 +2,11 @@
 
 // Inclusion des Contrôleurs du site
 use App\Controllers\MainController;
+use App\Controllers\NewsletterController;
 
 // Instanciation de la classe des contrôleurs
 $mainController = new MainController();
+$newsletterController = new NewsletterController();
 
 // Liste des routes avec leurs Contrôleur
 // Chaque URL correspond à une page du site
@@ -36,6 +38,15 @@ switch ( ROUTE )
 	// Page d' inscription
 	case '/signup/';
 		$mainController->signUp();
+		break;
+
+
+	/*
+	 * Gestion de la Newsletter
+	 */
+	// Page de la Newsletter
+	case '/newsletter/';
+		$newsletterController->newsletter();
 		break;
 
 

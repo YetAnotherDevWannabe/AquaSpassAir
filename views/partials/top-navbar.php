@@ -16,8 +16,8 @@
 			</li>
 
 			<!-- Newsletter -->
-			<li class="nav-item<?= (ROUTE == '/XXX/') ? ' active' : ''; ?>">
-				<a class="nav-link" href="<?= PUBLIC_PATH; ?>xxx/"><i class="far fa-newspaper"></i>Newsletter</a>
+			<li class="nav-item<?= (ROUTE == '/newsletter/') ? ' active' : ''; ?>">
+				<a class="nav-link" href="<?= PUBLIC_PATH; ?>newsletter/"><i class="far fa-newspaper"></i>Newsletter</a>
 			</li>
 
 			<!-- Reservation -->
