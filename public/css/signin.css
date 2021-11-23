@@ -23,7 +23,8 @@ body
 	align-items: center;
 	background-color: var(--white);
 	/* background: url("https://res.cloudinary.com/dci1eujqw/image/upload/v1616769558/Codepen/waldemar-brandt-aThdSdgx0YM-unsplash_cnq4sb.jpg"); */
-	background: url("../images/swiming-pool-blurred.jpg");
+	/* background: url("../images/swiming-pool-blurred.jpg"); */
+	background: url("../images/aqua-blurred.jpg");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -119,7 +120,8 @@ body
 {
 	background-color: var(--lightblue);
 	/* background: url("https://res.cloudinary.com/dci1eujqw/image/upload/v1616769558/Codepen/waldemar-brandt-aThdSdgx0YM-unsplash_cnq4sb.jpg"); */
-	background: url("../images/swiming-pool.jpg");
+	/* background: url("../images/swiming-pool.jpg"); */
+	background: url("../images/aqua.jpg");
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
