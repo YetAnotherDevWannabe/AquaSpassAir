@@ -1,0 +1,489 @@
+:root
+{
+	/* COLORS */
+	--blue: #0470B8;
+	--lightblue: #19B8E2;
+}
+
+/**************************
+ *         Nav bar        *
+ **************************/
+/* https://codepen.io/piyushpd/pen/gOYvZPG */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body
+{
+	font-family: 'Roboto', sans-serif;
+}
+
+/* *
+{
+	margin: 0;
+	padding: 0;
+} */
+
+i
+{
+	margin-right: 10px;
+}
+
+/*----------bootstrap-navbar-css------------*/
+.navbar-logo
+{
+	padding: 15px;
+	color: #fff;
+}
+
+.navbar-mainbg
+{
+	background-color: #5161ce;
+	padding: 0px;
+}
+
+#navbarSupportedContent
+{
+	overflow: hidden;
+	position: relative;
+}
+
+#navbarSupportedContent ul
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+#navbarSupportedContent ul li a i
+{
+	margin-right: 10px;
+}
+
+#navbarSupportedContent li
+{
+	list-style-type: none;
+	float: left;
+}
+
+#navbarSupportedContent ul li a
+{
+	color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    padding: 20px 20px;
+    transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    position: relative;
+}
+
+#navbarSupportedContent>ul>li.active>a
+{
+	color: #5161ce;
+	background-color: transparent;
+	transition: all 0.7s;
+}
+
+#navbarSupportedContent a:not(:only-child):after
+{
+	content: "\f105";
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	font-size: 14px;
+	font-family: "Font Awesome 5 Free";
+	display: inline-block;
+	padding-right: 3px;
+	vertical-align: middle;
+	font-weight: 900;
+	transition: 0.5s;
+}
+
+#navbarSupportedContent .active>a:not(:only-child):after
+{
+	transform: rotate(90deg);
+}
+
+.hori-selector
+{
+	display:inline-block;
+	position:absolute;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	transition-duration:0.6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	background-color: #fff;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	margin-top: 10px;
+}
+
+.hori-selector .right,
+.hori-selector .left
+{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-color: #fff;
+	bottom: 10px;
+}
+
+.hori-selector .right
+{
+	right: -25px;
+}
+
+.hori-selector .left
+{
+	left: -25px;
+}
+
+.hori-selector .right:before,
+.hori-selector .left:before
+{
+	content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #5161ce;
+}
+
+.hori-selector .right:before
+{
+	bottom: 0;
+    right: -25px;
+}
+
+.hori-selector .left:before
+{
+	bottom: 0;
+    left: -25px;
+}
+
+
+@media(min-width: 992px)
+{
+	.navbar-expand-custom
+	{
+	    -ms-flex-flow: row nowrap;
+	    flex-flow: row nowrap;
+	    -ms-flex-pack: start;
+	    justify-content: flex-start;
+	}
+
+	.navbar-expand-custom .navbar-nav
+	{
+	    -ms-flex-direction: row;
+	    flex-direction: row;
+	}
+
+	.navbar-expand-custom .navbar-toggler
+	{
+	    display: none;
+	}
+
+	.navbar-expand-custom .navbar-collapse
+	{
+	    display: -ms-flexbox!important;
+	    display: flex!important;
+	    -ms-flex-preferred-size: auto;
+	    flex-basis: auto;
+	}
+}
+
+
+@media (max-width: 991px)
+{
+	#navbarSupportedContent ul li a
+	{
+		padding: 12px 30px;
+	}
+
+	.hori-selector
+	{
+		margin-top: 0px;
+		margin-left: 10px;
+		border-radius: 0;
+		border-top-left-radius: 25px;
+		border-bottom-left-radius: 25px;
+	}
+
+	.hori-selector .left,
+	.hori-selector .right
+	{
+		right: 10px;
+	}
+
+	.hori-selector .left
+	{
+		top: -25px;
+		left: auto;
+	}
+
+	.hori-selector .right
+	{
+		bottom: -25px;
+	}
+
+	.hori-selector .left:before
+	{
+		left: -25px;
+		top: -25px;
+	}
+
+	.hori-selector .right:before
+	{
+		bottom: -25px;
+		left: -25px;
+	}
+}
+
+/**************************
+ *      CSS Page 404      *
+ **************************/
+@import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
+
+html,
+body
+{
+	margin   : 0px;
+	overflow : auto;
+}
+
+.div
+{
+	position   : absolute;
+	top        : 75px;
+	left       : 0;
+
+	height     : 100%;
+	width      : 100%;
+	margin     : 0px;
+	background : radial-gradient(circle, #34001f 0%, #2B0018 100%);
+	overflow   : hidden;
+}
+
+.wrap
+{
+	position  : absolute;
+	left      : 50%;
+	top       : 50%;
+	transform : translate(-50%, -50%);
+}
+
+.h2
+{
+	position       : absolute;
+	top            : 50%;
+	left           : 50%;
+	margin-top     : 150px;
+	font-size      : 32px;
+	text-transform : uppercase;
+	transform      : translate(-50%, -50%);
+	display        : block;
+	color          : #252525;
+	font-weight    : 300;
+	font-family    : Audiowide;
+	text-shadow    : 0px 0px 4px #2B0018;
+	animation      : fadeInText 3s ease-in 3.5s forwards, flicker4 5s linear 7.5s infinite, hueRotate 6s ease-in-out 3s infinite;
+}
+
+#svgWrap_1,
+#svgWrap_2
+{
+	position  : absolute;
+	height    : auto;
+	width     : 600px;
+	max-width : 100%;
+	top       : 50%;
+	left      : 50%;
+	transform : translate(-50%, -50%);
+}
+
+#svgWrap_1,
+#svgWrap_2,
+.div
+{
+	animation : hueRotate 6s ease-in-out 3s infinite;
+}
+
+#id1_1,
+#id2_1,
+#id3_1
+{
+	stroke       : #ff005d;
+	stroke-width : 3px;
+	fill         : transparent;
+	filter       : url(#glow);
+}
+
+#id1_2,
+#id2_2,
+#id3_2
+{
+	stroke       : #252525;
+	stroke-width : 3px;
+	fill         : transparent;
+	filter       : url(#glow);
+}
+
+#id3_1
+{
+	stroke-dasharray  : 940px;
+	stroke-dashoffset : -940px;
+	animation         : drawLine3 2.5s ease-in-out 0s forwards, flicker3 4s linear 4s infinite;
+}
+
+#id2_1
+{
+	stroke-dasharray  : 735px;
+	stroke-dashoffset : -735px;
+	animation         : drawLine2 2.5s ease-in-out 0.5s forwards, flicker2 4s linear 4.5s infinite;
+}
+
+#id1_1
+{
+	stroke-dasharray  : 940px;
+	stroke-dashoffset : -940px;
+	animation         : drawLine1 2.5s ease-in-out 1s forwards, flicker1 4s linear 5s infinite;
+}
+
+@keyframes drawLine1
+{
+	0%
+	{stroke-dashoffset : -940px;}
+	100%
+	{stroke-dashoffset : 0px;}
+}
+
+@keyframes drawLine2
+{
+	0%
+	{stroke-dashoffset : -735px;}
+	100%
+	{stroke-dashoffset : 0px;}
+}
+
+@keyframes drawLine3
+{
+	0%
+	{stroke-dashoffset : -940px;}
+	100%
+	{stroke-dashoffset : 0px;}
+}
+
+@keyframes flicker1
+{
+	0%
+	{stroke : #ff005d;}
+	1%
+	{stroke : transparent;}
+	3%
+	{stroke : transparent;}
+	4%
+	{stroke : #ff005d;}
+	6%
+	{stroke : #ff005d;}
+	7%
+	{stroke : transparent;}
+	13%
+	{stroke : transparent;}
+	14%
+	{stroke : #ff005d;}
+	100%
+	{stroke : #ff005d;}
+}
+
+@keyframes flicker2
+{
+	0%
+	{stroke : #ff005d;}
+	50%
+	{stroke : #ff005d;}
+	51%
+	{stroke : transparent;}
+	61%
+	{stroke : transparent;}
+	62%
+	{stroke : #ff005d;}
+	100%
+	{stroke : #ff005d;}
+}
+
+@keyframes flicker3
+{
+	0%
+	{stroke : #ff005d;}
+	1%
+	{stroke : transparent;}
+	10%
+	{stroke : transparent;}
+	11%
+	{stroke : #ff005d;}
+	40%
+	{stroke : #ff005d;}
+	41%
+	{stroke : transparent;}
+	45%
+	{stroke : transparent;}
+	46%
+	{stroke : #ff005d;}
+	100%
+	{stroke : #ff005d;}
+}
+
+@keyframes flicker4
+{
+	0%
+	{color : #ff005d;text-shadow : 0px 0px 4px #ff005d;}
+	30%
+	{color : #ff005d;text-shadow : 0px 0px 4px #ff005d;}
+	31%
+	{color : #2B0018;text-shadow : 0px 0px 4px #2B0018;}
+	32%
+	{color : #ff005d;text-shadow : 0px 0px 4px #ff005d;}
+	36%
+	{color : #ff005d;text-shadow : 0px 0px 4px #ff005d;}
+	37%
+	{color : #2B0018;text-shadow : 0px 0px 4px #2B0018;}
+	41%
+	{color : #2B0018;text-shadow : 0px 0px 4px #2B0018;}
+	42%
+	{color : #ff005d;text-shadow : 0px 0px 4px #ff005d;}
+	85%
+	{color : #ff005d;text-shadow : 0px 0px 4px #ff005d;}
+	86%
+	{color : #2B0018;text-shadow : 0px 0px 4px #2B0018;}
+	95%
+	{color : #2B0018;text-shadow : 0px 0px 4px #2B0018;}
+	96%
+	{color : #ff005d;text-shadow : 0px 0px 4px #ff005d;}
+	100%
+	{color : #ff005d;text-shadow : 0px 0px 4px #ff005d;}
+}
+
+@keyframes fadeInText
+{
+	1%
+	{color : #2B0018;text-shadow : 0px 0px 4px #2B0018;}
+	70%
+	{color : #ff005d;text-shadow : 0px 0px 14px #ff005d;}
+	100%
+	{color : #ff005d;text-shadow : 0px 0px 4px #ff005d;}
+}
+
+@keyframes hueRotate
+{
+	0%
+	{
+		filter : hue-rotate(0deg);
+	}
+	50%
+	{
+		filter : hue-rotate(-120deg);
+	}
+	100%
+	{
+		filter : hue-rotate(0deg);
+	}
+}
