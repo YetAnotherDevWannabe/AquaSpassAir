@@ -3,12 +3,10 @@
 // Inclusion des Contrôleurs du site
 use App\Controllers\MainController;
 use App\Controllers\NewsletterController;
-use App\Controllers\PhotosController;
 
 // Instanciation de la classe des contrôleurs
 $mainController = new MainController();
 $newsletterController = new NewsletterController();
-$photosController = new PhotosController();
 
 // Liste des routes avec leurs Contrôleur
 // Chaque URL correspond à une page du site
@@ -47,13 +45,23 @@ switch ( ROUTE )
 	 * Gestion des pages autres actions
 	 */
 	// Page de la Newsletter
-	// case '/newsletter/';
-	// 	$newsletterController->newsletter();
-	// 	break;
+	case '/newsletter/';
+		$mainController->enConstruction();
+		break;
+
+	// Page des photos
+	case '/reservations/';
+		$mainController->enConstruction();
+		break;
+
+	// Page des photos
+	case '/acheter-une-place/';
+		$mainController->enConstruction();
+		break;
 
 	// Page des photos
 	case '/photos/';
-		$photosController->photos();
+		$mainController->enConstruction();
 		break;
 
 	// Page Trouvez-nous

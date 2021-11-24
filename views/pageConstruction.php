@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-  <title>Page introuvable - AQUASPASS'AIR</title>
+  <title>Page en construction - AQUASPASS'AIR</title>
   <?php include VIEWS_DIR . '/partials/header.php'; ?>
   <link rel="stylesheet" href="<?= PUBLIC_PATH; ?>/css/404.css">
 </head>
@@ -11,6 +11,7 @@
   <?php include VIEWS_DIR . '/partials/top-navbar.php'; ?>
 
 
+  
   <div class="container-fluid">
     <div class="row">
       <div class="col-12">
@@ -19,13 +20,13 @@
         <div class="row">
 
           <div class="col-12 col-lg-6">
-            <img src="<?= PUBLIC_PATH; ?>/images/404.svg" alt="erreur 404" class="svg svg-margins">
+            <img src="<?= PUBLIC_PATH; ?>/images/WIP.svg" alt="En construction" class="svg svg-margins">
           </div>
 
           <div class="col-12 col-lg-6 contain">
             <div class="vertical-center">
-              <h1 class="text-center text-lg-start">404</h1>
-              <p class="text-center text-lg-start">Page introuvable</p>
+              <h1 class="text-center text-lg-start">En construction</h1>
+              <p class="text-center text-lg-start">Merci de revenir plus tard</p>
               <div class="buttons-con">
                 <div class="action-link-wrap">
                   <a onclick="history.back(-1)" class="link-button link-back-button"><i class="fas fa-arrow-circle-left"></i>Retour</a>

@@ -212,10 +212,27 @@ class MainController
 	}
 
 	/**
+	 * Contrôleur de la page en construction
+	 */
+	public function enConstruction()
+	{
+		require VIEWS_DIR . 'pageConstruction.php';
+	}
+
+	/**
 	 * Contrôleur de la page Trouvez-nous
 	 */
 	public function findUs()
 	{
 		require VIEWS_DIR . 'findUs.php';
+	}
+
+	/**
+	 * Contrôleur de la page photos
+	 */
+	public function photos()
+	{
+		// Charge la vue home.php dans le dossier views
+		require VIEWS_DIR . 'photos.php';
 	}
 }
