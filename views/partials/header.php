@@ -8,7 +8,12 @@
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <![endif]-->
-<!--<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"> FontAwesome -->
-<link rel="stylesheet" href="<?= PUBLIC_PATH; ?>/css/fontawesome/css/all.css"><!-- FontAwesome Pro -->
-<link rel="stylesheet" href="<?= PUBLIC_PATH; ?>/css/bootstrap.min.css"><!-- Bootstrap css -->
+<!-- Normalize -->
+<link rel="stylesheet" href="https://yarnpkg.com/en/package/normalize.css">
+<!-- FontAwesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<!-- Boostrap CSS -->
+<link rel="stylesheet" href="<?= PUBLIC_PATH; ?>/css/bootstrap.min.css">
 <link rel="stylesheet" href="<?= PUBLIC_PATH; ?>/css/styles.css">
+
+<script type="text/javascript" src="https://livejs.com/live.js"></script>

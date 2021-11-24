@@ -1,5 +1,6 @@
 <nav class="navbar navbar-expand-custom navbar-mainbg d-flex">
-	<a class="navbar-brand navbar-logo" href="#">Navbar</a>
+	<!-- <a href="#">Navbar</a> -->
+	<img style="width: 30px; padding: 0px; margin-left: 15px;" src="<?= PUBLIC_PATH; ?>/images/logo/logo_blanc.png" alt="logo" class="navbar-brand navbar-logo">
 	<button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<i class="fas fa-bars text-white"></i>
 	</button>
@@ -12,7 +13,7 @@
 
 			<!-- Home -->
 			<li class="nav-item<?= (ROUTE == '/') ? ' active' : ''; ?>">
-				<a class="nav-link" href="<?= PUBLIC_PATH; ?>"><i class="fas fa-home-alt"></i>Home</a>
+				<a class="nav-link" href="<?= PUBLIC_PATH; ?>"><i class="fas fa-home"></i>Accueil</a>
 			</li>
 
 			<!-- Newsletter -->
@@ -21,13 +22,23 @@
 			</li>
 
 			<!-- Reservation -->
-			<li class="nav-item<?= (ROUTE == '/XXX/') ? ' active' : ''; ?>">
-				<a class="nav-link" href="<?= PUBLIC_PATH; ?>xxx/"><i class="far fa-calendar-alt"></i>Reservation</a>
+			<li class="nav-item<?= (ROUTE == '/reservations/') ? ' active' : ''; ?>">
+				<a class="nav-link" href="<?= PUBLIC_PATH; ?>reservations/"><i class="far fa-calendar-alt"></i>Réservations</a>
 			</li>
 
 			<!-- Acheter une place -->
-			<li class="nav-item<?= (ROUTE == '/XXX/') ? ' active' : ''; ?>">
-				<a class="nav-link" href="<?= PUBLIC_PATH; ?>xxx/"><i class="fas fa-shopping-cart"></i>Acheter une place</a>
+			<li class="nav-item<?= (ROUTE == '/acheter-une-place/') ? ' active' : ''; ?>">
+				<a class="nav-link" href="<?= PUBLIC_PATH; ?>acheter-une-place/"><i class="fas fa-shopping-cart"></i>Acheter une place</a>
+			</li>
+
+			<!-- Photos -->
+			<li class="nav-item<?= (ROUTE == '/photos/') ? ' active' : ''; ?>">
+				<a class="nav-link" href="<?= PUBLIC_PATH; ?>photos/"><i class="fas fa-images"></i>Photos</a>
+			</li>
+
+			<!-- Trouvez-nous -->
+			<li class="nav-item<?= (ROUTE == '/trouvez-nous/') ? ' active' : ''; ?>">
+				<a class="nav-link" href="<?= PUBLIC_PATH; ?>trouvez-nous/"><i class="fas fa-map-marker-alt"></i>Trouvez-nous</a>
 			</li>
 
 			<?php
@@ -35,8 +46,8 @@
 			{
 				?>
 				<!-- Sign Out -->
-				<li class="nav-item<?= (ROUTE == '/signout/') ? ' active' : ''; ?>">
-					<a class="nav-link" href="<?= PUBLIC_PATH; ?>signout/"><i class="fas fa-sign-out-alt"></i>Sign Out</a>
+				<li class="nav-item ms-lg-5<?= (ROUTE == '/deconnexion/') ? ' active' : ''; ?>">
+					<a class="nav-link" href="<?= PUBLIC_PATH; ?>deconnexion/"><i class="fas fa-sign-out-alt"></i>Déconnexion</a>
 				</li>
 				<?php
 			}
@@ -44,8 +55,8 @@
 			{
 				?>
 				<!-- Sign In -->
-				<li class="nav-item<?= (ROUTE == '/signin/') ? ' active' : ''; ?><?= (ROUTE == '/signup/') ? ' active' : ''; ?>">
-					<a class="nav-link" href="<?= PUBLIC_PATH; ?>signin/"><i class="fas fa-sign-in-alt"></i>Sign In</a>
+				<li class="nav-item ms-lg-5<?= (ROUTE == '/connexion/') ? ' active' : ''; ?><?= (ROUTE == '/signup/') ? ' active' : ''; ?>">
+					<a class="nav-link" href="<?= PUBLIC_PATH; ?>connexion/"><i class="fas fa-sign-in-alt"></i>Connexion</a>
 				</li>
 				<?php
 			}

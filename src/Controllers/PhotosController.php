@@ -5,19 +5,14 @@
 // Le nom de ce fichier doit être le même que le nom de la classe : MainController
 namespace App\Controllers;
 
-// Importation des classes nécessaires
-use App\Models\DAO\UserManager;
-use App\Models\DTO\User;
-use \DateTime;
-
-class NewsletterController
+class PhotosController
 {
 	/**
-	 * Contrôleur de la vue d' accueil du site
+	 * Contrôleur de la page photos
 	 */
-	public function newsletter()
+	public function photos()
 	{
 		// Charge la vue home.php dans le dossier views
-		// require VIEWS_DIR . 'newsletter.php';
+		require VIEWS_DIR . 'photos.php';
 	}
 }

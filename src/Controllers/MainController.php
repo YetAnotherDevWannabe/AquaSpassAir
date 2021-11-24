@@ -77,6 +77,8 @@ class MainController
 						// Connection
 						$_SESSION['user'] = $userToConnect;
 						$success = 'Your are now logged-in';
+
+						header('location: ' . PUBLIC_PATH);
 					}
 					else
 					{
@@ -105,9 +107,10 @@ class MainController
 
 		// Supprime l' utilisateur de la variable $_SESSION
 		unset($_SESSION['user']);
+		header('location: ' . PUBLIC_PATH);
 
 		// Charge la vue logout.php dans le dossier des vues "views"
-		require VIEWS_DIR . 'signout.php';
+		// require VIEWS_DIR . 'signout.php';
 	}
 
 
@@ -206,5 +209,13 @@ class MainController
 
 		// Charge la vue page404.php dans le dossier views
 		require VIEWS_DIR . 'page404.php';
+	}
+
+	/**
+	 * Contrôleur de la page Trouvez-nous
+	 */
+	public function findUs()
+	{
+		require VIEWS_DIR . 'findUs.php';
 	}
 }
