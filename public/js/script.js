@@ -13,14 +13,10 @@ function navbarSelection() {
 	var activeWidthNewAnimWidth = activeItemNewAnim.innerWidth();
 	var itemPosNewAnimTop = activeItemNewAnim.position();
 	var itemPosNewAnimLeft = activeItemNewAnim.position();
-	var xDecal = 0;
-	if (returnPath() == 'connexion' || returnPath() == 'inscription') {
-		xDecal = 50;
-	}
 
 	$(".hori-selector").css({
 		"top": itemPosNewAnimTop.top + "px",
-		"left": (itemPosNewAnimLeft.left + xDecal) + "px",
+		"left": itemPosNewAnimLeft.left + "px",
 		// "height": activeWidthNewAnimHeight + "px",
 		"width": activeWidthNewAnimWidth + "px"
 	});
@@ -33,7 +29,7 @@ function navbarSelection() {
 		var itemPosNewAnimLeft = $(this).position();
 		$(".hori-selector").css({
 			"top": itemPosNewAnimTop.top + "px",
-			"left": (itemPosNewAnimLeft.left + xDecal) + "px",
+			"left": itemPosNewAnimLeft.left + "px",
 			// "height": activeWidthNewAnimHeight + "px",
 			"width": activeWidthNewAnimWidth + "px"
 		});
@@ -94,7 +90,7 @@ jQuery(document).ready(function($) {
 /**************************
  *          Bonus         *
  **************************/
-if (returnPath() == 'connexion') {
+if (returnPath() == 'connexion' || returnPath() == 'inscription') {
 	document.querySelector('#KillItWithFire').addEventListener('click', function() {
 		var KICKASSVERSION = '2.0';
 		var s = document.createElement('script');

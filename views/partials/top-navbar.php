@@ -46,7 +46,7 @@
 			{
 				?>
 				<!-- Sign Out -->
-				<li class="nav-item ms-lg-5<?= (ROUTE == '/deconnexion/') ? ' active' : ''; ?>">
+				<li class="nav-item<?= (ROUTE == '/deconnexion/') ? ' active' : ''; ?>">
 					<a class="nav-link" href="<?= PUBLIC_PATH; ?>deconnexion/"><i class="fas fa-sign-out-alt"></i>Déconnexion</a>
 				</li>
 				<?php
@@ -55,7 +55,7 @@
 			{
 				?>
 				<!-- Sign In -->
-				<li class="nav-item ms-lg-5<?= (ROUTE == '/connexion/') ? ' active' : ''; ?><?= (ROUTE == '/signup/') ? ' active' : ''; ?>">
+				<li class="nav-item<?= (ROUTE == '/connexion/') ? ' active' : ''; ?><?= (ROUTE == '/signup/') ? ' active' : ''; ?>">
 					<a class="nav-link" href="<?= PUBLIC_PATH; ?>connexion/"><i class="fas fa-sign-in-alt"></i>Connexion</a>
 				</li>
 				<?php
