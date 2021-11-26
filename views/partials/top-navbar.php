@@ -16,11 +16,6 @@
 				<a class="nav-link" href="<?= PUBLIC_PATH; ?>"><i class="fas fa-home"></i>Accueil</a>
 			</li>
 
-			<!-- Newsletter -->
-			<li class="nav-item<?= (ROUTE == '/newsletter/') ? ' active' : ''; ?>">
-				<a class="nav-link" href="<?= PUBLIC_PATH; ?>newsletter/"><i class="far fa-newspaper"></i>Newsletter</a>
-			</li>
-
 			<!-- Reservation -->
 			<li class="nav-item<?= (ROUTE == '/reservations/') ? ' active' : ''; ?>">
 				<a class="nav-link" href="<?= PUBLIC_PATH; ?>reservations/"><i class="far fa-calendar-alt"></i>Réservations</a>
@@ -41,24 +36,26 @@
 				<a class="nav-link" href="<?= PUBLIC_PATH; ?>trouvez-nous/"><i class="fas fa-map-marker-alt"></i>Trouvez-nous</a>
 			</li>
 
+			<!-- Contactez-nous -->
+			<li class="nav-item<?= (ROUTE == '/contactez-nous/') ? ' active' : ''; ?>">
+				<a class="nav-link" href="<?= PUBLIC_PATH; ?>contactez-nous/"><i class="far fa-newspaper"></i>Contactez-nous</a>
+			</li>
+
 			<?php
-			if (isConnected())
-			{
-				?>
+			if (isConnected()) {
+			?>
 				<!-- Sign Out -->
 				<li class="nav-item<?= (ROUTE == '/deconnexion/') ? ' active' : ''; ?>">
 					<a class="nav-link" href="<?= PUBLIC_PATH; ?>deconnexion/"><i class="fas fa-sign-out-alt"></i>Déconnexion</a>
 				</li>
-				<?php
-			}
-			else
-			{
-				?>
+			<?php
+			} else {
+			?>
 				<!-- Sign In -->
 				<li class="nav-item<?= (ROUTE == '/connexion/') ? ' active' : ''; ?><?= (ROUTE == '/signup/') ? ' active' : ''; ?>">
 					<a class="nav-link" href="<?= PUBLIC_PATH; ?>connexion/"><i class="fas fa-sign-in-alt"></i>Connexion</a>
 				</li>
-				<?php
+			<?php
 			}
 			?>
 

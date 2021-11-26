@@ -235,4 +235,13 @@ class MainController
 		// Charge la vue home.php dans le dossier views
 		require VIEWS_DIR . 'photos.php';
 	}
+
+	/**
+	 * Contrôleur de la page photos
+	 */
+	public function prices()
+	{
+		// Charge la vue home.php dans le dossier views
+		require VIEWS_DIR . 'tarifs.php';
+	}
 }

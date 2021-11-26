@@ -10,14 +10,14 @@ use App\Models\DAO\UserManager;
 use App\Models\DTO\User;
 use \DateTime;
 
-class NewsletterController
+class ContactController
 {
 	/**
 	 * Contrôleur de la vue d' accueil du site
 	 */
-	public function newsletter()
+	public function contactUs()
 	{
 		// Charge la vue home.php dans le dossier views
-		// require VIEWS_DIR . 'newsletter.php';
+		require VIEWS_DIR . 'contactUs.php';
 	}
 }
