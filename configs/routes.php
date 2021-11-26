@@ -49,19 +49,19 @@ switch ( ROUTE )
 		$mainController->enConstruction();
 		break;
 
-	// Page des photos
+	// Page des reservations
 	case '/reservations/';
 		$mainController->enConstruction();
 		break;
 
-	// Page des photos
+	// Page de vente
 	case '/acheter-une-place/';
 		$mainController->enConstruction();
 		break;
 
 	// Page des photos
 	case '/photos/';
-		$mainController->enConstruction();
+		$mainController->photos();
 		break;
 
 	// Page Trouvez-nous
