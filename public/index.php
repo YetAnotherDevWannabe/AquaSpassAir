@@ -7,6 +7,7 @@ require __DIR__ .'/../configs/functions.php';
 
 // Inclusion du fichier contenant les paramètres personnalisables du site (accès DB par ex)
 require __DIR__ .'/../configs/params.php';
+require __DIR__ .'/../configs/params_hosted.php';
 
 try
 {

@@ -16,9 +16,9 @@
 				<a class="nav-link" href="<?= PUBLIC_PATH; ?>"><i class="fas fa-home"></i>Accueil</a>
 			</li>
 
-			<!-- Reservation -->
-			<li class="nav-item<?= (ROUTE == '/reservations/') ? ' active' : ''; ?>">
-				<a class="nav-link" href="<?= PUBLIC_PATH; ?>reservations/"><i class="far fa-calendar-alt"></i>Réservations</a>
+			<!-- Photos -->
+			<li class="nav-item<?= (ROUTE == '/photos/') ? ' active' : ''; ?>">
+				<a class="nav-link" href="<?= PUBLIC_PATH; ?>photos/"><i class="fas fa-images"></i>Photos</a>
 			</li>
 
 			<!-- Acheter une place -->
@@ -26,9 +26,9 @@
 				<a class="nav-link" href="<?= PUBLIC_PATH; ?>acheter-une-place/"><i class="fas fa-shopping-cart"></i>Acheter une place</a>
 			</li>
 
-			<!-- Photos -->
-			<li class="nav-item<?= (ROUTE == '/photos/') ? ' active' : ''; ?>">
-				<a class="nav-link" href="<?= PUBLIC_PATH; ?>photos/"><i class="fas fa-images"></i>Photos</a>
+			<!-- Reservation -->
+			<li class="nav-item<?= (ROUTE == '/reservations/') ? ' active' : ''; ?>">
+				<a class="nav-link" href="<?= PUBLIC_PATH; ?>reservations/"><i class="far fa-calendar-alt"></i>Réservations</a>
 			</li>
 
 			<!-- Trouvez-nous -->

@@ -15,3 +15,6 @@
 
 # Filtre sur les dossiers / fichiers '._'
 *._*
+
+# Filtre les donnees d'acces a la BDD
+/configs/params_hosted.php
