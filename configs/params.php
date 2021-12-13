@@ -10,7 +10,7 @@ define('VIEWS_DIR', __DIR__ . '/../views/');
 define('PUBLIC_PATH', mb_substr($_SERVER['SCRIPT_NAME'], 0, -(mb_strlen(basename(__FILE__)))) . '/');
 
 // Paramètres de connexion à la DB
-define('DB_HOST',     'localhost');
+define('DB_HOST',     'sql308.epizy.com');
 define('DB_NAME',     'aquaspassair');
-define('DB_USER',     'root');
-define('DB_PASSWORD', '');
+define('DB_USER',     'epiz_30447195');
+define('DB_PASSWORD', 'LY447HJfAXIUGMJ');
